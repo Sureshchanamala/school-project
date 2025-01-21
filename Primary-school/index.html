@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow:inherit;
+  background-color: lightgray;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #2b56a3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  display: flex;
+  align-self: center;
+}
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.img-head{
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+}
+.nav-iteams{
+    margin-top: 40px;
+    font-weight: bold;
+}
+#home{
+  margin-left: 100px;
+  
+}
+.container .left , .container .right{
+  width: 30%;
+  height: 500px;
+  /* background-color: #04AA6D; */
+  border-radius: 30px;
+  border: 3px solid;
+  text-align: center;
+  
+}
+.container{
+  padding: 50px;
+  gap: 30px;
+}
+.container .right h1{
+  font-size: 55px;
+}
+#fee{
+  margin-bottom: 0px;
+}
+#fee1{
+  margin-top: 0px;
+}
+.btn{
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: aqua;
+  border: none;
+}
+.pay-det{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.gpay{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.welcome{
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+.welcome .left , .welcome .right{
+  width: 45%;
+  height: 400px;
+  margin-top: 50px;
+}
+.welcome .left h1{
+  font-size: 55px;
+  font-weight: bold;
+}
+.welcome .left p{
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.circles{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  
+}
+.circle{
+  width: 300px;
+  height: 300px;
+  border-radius: 1300px;
+  background-color: #04AA6D;
+  text-align: center;
+}
+.circle h1{
+  padding-top: 115px;
+}
+.circle:hover{
+  box-sizing:  18px 50px 0 rgba(0,0,0,.18);
+  }
+  .end-sec{
+    text-align: center;
+    font-size: 55px;
+  }
+  .learnmore-sec{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 23px;
+    text-transform: capitalize;
+    border-bottom:5px dotted skyblue;
+    margin-left: 200px;
+    margin-right: 200px;
+
+  }
+  .btn-learnmore{
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+  .btn-center{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .we-ofeered{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .we-ofeered .left, .we-ofeered .center ,.we-ofeered .right{
+    width: 30%;
+  }
+  .what-we-offerd h1{
+    text-align: center;
+    font-size: 57px;
+  }
+  .about-teachers{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+  .about-teachers .left ,.about-teachers .right{
+    width: 45%;
+  height: 400px;
+  margin-top: 50px;
+  }
+  .about-exam{
+    text-align: center;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+  }
+  .about-exam .left, .about-exam .right{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+@media screen and (max-width: 780px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .img-head{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+}
+}
+
+@media screen and (max-width: 780px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+
+    
+    <div class="continer">
+        <a href="/" class="logo"> <img class="img-head" src='images/logo.png' alt=""></a>
+
+   
+       
+    <a class="nav-iteams"  id="home" href="#" style="--i:0">Home</a>
+    <a class="nav-iteams" href="about.html" style="--i:1">About US</a>
+    <a class="nav-iteams" href="founder.html" style="--i:2">Founder</a>
+    <a class="nav-iteams" href="acadamics.html" style="--i:3">Academics</a>
+    <a class="nav-iteams" href="amenities.html" style="--i:4">Amenities & Activities</a>
+    <a class="nav-iteams" href="admission.html" style="--i:5">Admission Process</a>
+    <a class="nav-iteams" href="alumicorner.html" style="--i:6">Alumi Corner</a>
+    <a class="nav-iteams" href="founder.html" style="--i:7">Founder</a>
+    <a class="nav-iteams" href="gallery.html" style="--i:8">Gallery</a>
+    <a class="nav-iteams" href="contact.html" style="--i:9">Contact Us</a>
+   
+</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i style="font-size: 30px; margin-top: 25px; margin-right: 20px;" class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<div id="carouselExample" class="carousel slide">
+
+
+  <div class="w3-content w3-section" style="max-width:100%">
+      <img class="  mySlides"
+          src="images/home012_mob.jpg"
+          style="width:100% ;height: 750px; ">
+      <img class="   mySlides"
+          src="images/2 - 12 x 6 - 1 copy.jpg"
+          style="width:100% ;height: 750px;">
+      <img class="  mySlides"
+          src="images/ban6.jpg"
+          style="width:100% ;height: 750px;">
+  </div>
+  </div>
+  <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) { myIndex = 1 }
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000); 
+      }
+  </script>
+  <div>
+    <div class="container" style="display: flex; justify-content:center;align-items: center ;">
+      <div class="left">
+      </div>
+      <div class="right">
+        <h1 id="fee"><b>Online Fee</b></h1>
+        <h1 id="fee1"><b>Payment</b></h1>
+        <button class="btn">Pay Now</button>
+
+        <p class="pay-det">School Fee can also be paid on Google Pay <br>
+          (only for Public School i.e., Classes 1 to 12)</p>
+
+          <p class="gpay">Google pay on :- 9**** *****</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="welcome">
+
+
+    <div class="left">
+      <h1>Welcome</h1>
+      <p>Welcome to St. Joseph’s Public School. The success story of St. Joseph’s Public School is filled with commitment, 
+        dedication and relentless striving for perfection in providing holistic education. In a time,
+         where the meaning of true education is driven by the demands and pressures of the multitude, 
+         St. Joseph’s Public School, King Koti stood the test of time and carved a niche for itself.</p>
+    </div>
+
+
+    <div class="right">
+      <img style="height: 300px; width: 100%; border-radius: 20px;" src="images/3.jpg" alt="">
+    </div>
+  
+</div>
+
+<div class="circles">
+<div>  <div class="circle"><h1>Digital <br> Classroom</h1></div></div> 
+<div>  <div class="circle"><h1>Playground</h1></div></div> 
+<div>  <div class="circle"><h1>Library</h1></div></div> 
+<div>  <div class="circle"><h1>Modern <br> Education</h1></div></div> 
+
+</div>
+
+<div class="end-sec">
+  <h1>--</h1>
+</div>
+
+<div class="learnmore-sec">
+  <p>St. Joseph’s Public School is a reputed School in Hyderabad. St. Joseph’s Education Society, the brainchild of Sri Udumula Gregory Reddy (U.G. Reddy) established St.
+   Anthony’s High School at Himayathnagar with a State Board curriculum in 1970. Within no time the task of providing quality education which began humbly has
+    grown massively encompassing under its shade thousands of students and hundreds of teachers.
+    Every year the trust of the parents was reinforced with the school setting new levels of standards in the field of education.
+     The demand from parents for this kind of quality education has led to the emergence of  St. Joseph’s Public School, 
+  affiliated to the Council for Indian School Certificate Examination,  New Delhi at King Koti in 1980.
+</p>
+<div class="btn-center"> <span ><button class="btn-learnmore"><b>Learnmore</b></button></span></div>  
+</div>
+
+
+<div  class="what-we-offerd">
+     <h1><u>What We Offer</u></h1>
+  <div class="we-ofeered">
+        <div class="left"><p>St. Joseph’s Public School is filled with commitment, 
+         dedication and relentless striving for perfection in providing holistic education.</p></div>
+
+        <div class="center">
+          <h2>Subjects Offered</h2>
+          <p>English, Mathematics, Science, Social Studies</p>
+          <p>II Languages (Telugu / Hindi)</p>
+          <p>Computer Education – Classes I to VIII</p>
+           <p>III Language – (Telugu / Hindi) Classes IV to VII</p>
+       </div>
+
+      <div class="right">
+        <h2>Elective Subjects</h2>
+        <p>Computer Applications / Commercial Applications / Fashion Designing (Classes VIII to X)</p>
+        <p>SUPW is a compulsory subject.</p>
+        <button>Learnmore</button>
+      </div>
+  </div>
+   
+</div>
+
+
+
+<div class="about-teachers">
+  <div class="left">
+    <img style="height: 300px; width: 100%; border-radius: 20px;" src="images/EXPERIENCED-TEACHERS.jpg" alt="">
+  </div>
+  <div class="right">
+    <h1>Experienced Teachers</h1>
+    <p>The school is equipped with well trained staff members. 
+      The matters concerning the Academics is delegated through the Heads of the Departments, 
+      Senior Teachers & Assistant Teachers.</p>
+      <p>For every 2 classes one Floor – Incharge is deputed to look into the administrative and day to day matters relating to their classes. 
+        The staff comprises a group of teachers over 30 years of experience who oversee and guide the affairs of academics.</p>
+  </div>
+</div>
+
+
+<div class="about-exam">
+  <div class="left">
+    <h1>TESTS AND EXAMINATIONS</h1>
+    <p>_</p>
+    <p>Three Unit Tests and Three Terminal Examinations per academic year. Promotion is based on the performance in these examinations.</p>
+  </div>
+  <div class="right">
+    <h1>ACADEMIC INSPECTION CELL</h1>
+    <p>_</p>
+    <p>Academic Inspection Cell continuously monitors and evaluates the Academic work in the school  
+      and guides the teaching staff in updating and upgrading their teaching process.</p>
+  </div>
+</div>
+
+<div>
+  <div>
+    <h1>School Facilities:</h1>
+    <p>An effective school facility is aware of the changing programs of educational delivery, and at a minimum should provide a physical environment that’s comfortable,
+       safe, secure, accessible, well illuminated, well ventilated, and aesthetically pleasing.</p>
+  </div>
+  <div>
+    <ul>
+      <li>Spacious and well-ventilated classrooms.</li>
+      <li>Smart Boards for Classes P-I, P-II & I to V.</li>
+      <li>Three well equipped computer labs with latest hardware and software.</li>
+      <li>Three well equipped science labs – Physics, Chemistry, Biology.</li>
+      <li>Two well stocked Libraries for Primary & Highschool.</li>
+      <li>An auditorium with a seating capacity of 500 audience.</li>
+      <li>Two basket ball courts, throw ball court, volley ball court and lawn tennis court.</li>
+      <li>The school building is covered with Fire Safety Equipment installed with Fire Safety measures.</li>
+      <li>The building, classrooms and the corridors are under CC Camera surveillance.</li>
+      <li>Water Treatment Plant supplies purified drinking water to all buildings & all floors.</li>
+      <li>A Generator facility is available in the school.</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
