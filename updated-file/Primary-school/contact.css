@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.contact .heading{
+    font-size: 60px;
+    color:#083d65;
+    font-weight: 700;
+}
+.contact .card{
+    min-height: 350px;
+    margin-top: 50px;
+}
+.contact .card .card-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #083d65;
+}
+
+.contact .card .icon-container{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.contact .card .icon-container i{
+    font-size: 26px;
+}
+
+.contact .card .card-body{
+    margin-top: 75px;
+}
+.address{
+    background: #1ea2d8;
+}
+.email{
+    background: #1fc3d2;
+}
+.phone{
+    background: #083d65;
+}
+.copy-right{
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  padding: 20px;
+}
+.scrollToTop{
+    position: sticky;
+    left: 95%;
+    bottom: 5%;
+}
+@media screen and (max-width: 500px) {
+    .contact h1{
+        font-size: 35px !important;
+    }
+}

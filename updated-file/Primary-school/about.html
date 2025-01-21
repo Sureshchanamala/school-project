@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="about.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #083d65;
+      text-align: center;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      /* background-color: #ddd; */
+      color: #ed212b;
+    }
+
+    .topnav a.active {
+      color: #ed212b;
+
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .nav-items {
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    #home {
+      margin-left: 100px;
+
+    }
+
+    .img-head {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .img-head {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <div class="continer">
+      <a href="#"><img class="img-head" src="images/logo.png" alt=""></a>
+
+      <a class="nav-items" id="home" href="index.html" style="--i:0">Home</a>
+      <a class="nav-items active" href="#" style="--i:1">About US</a>
+      <a class="nav-items" href="founder.html" style="--i:2">Founder</a>
+      <a class="nav-items" href="acadamics.html" style="--i:3">Academics</a>
+      <a class="nav-items" href="alumniform.html" style="--i:4">Alumni Form</a>
+      <a class="nav-items" href="admission.html" style="--i:5">Admission Process</a>
+      <a class="nav-items" href="alumnicorner.html" style="--i:6">Alumni Corner</a>
+      <a class="nav-items" href="gallery.html" style="--i:7">Gallery</a>
+      <a class="nav-items" href="contact.html" style="--i:8">Contact Us</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i style="font-size: 30px; margin-top: 25px; margin-right: 20px;" class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <div class="container-fluid bg-gray aboutUs">
+    <div class="aboutus">
+      <div class="left" >
+        <h1 class="heading">About Us</h1>
+        <p class="para"> St. Joseph’s Public School, King Koti, affiliated to the Council for Indian School Certificate
+          Examination,
+          New Delhi was established in the year 1980 under St. Joseph’s Education Society with the dynamic leadership of
+          our founder
+          Sri Udumula Gregory Reddy (U.G. Reddy).</p>
+      </div>
+      <div class="right">
+        <img src="https://stjosephspublicschoolkingkoti.com/wp-content/uploads/2020/09/Untitled-design-1-1024x1024.png"
+          class="img-fluid p-5" style="width: 600px;" alt="">
+      </div>
+    </div>
+
+<div class="container aboutUs">
+    <div class="row section mt-5" >
+      <div class="col-md-6">
+        <div class="head1 mt-5">
+          <h5 class="fw-bold">St. Joseph’s Public School is filled with commitment, dedication and relentless striving for perfection in providing holistic education.</h5>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="head">
+          <h5>
+            Subjects Offered
+          </h5>
+        </div>
+        <div class="description mt-5">
+          <p>English, Mathematics, Science, Social Studies</p>
+          <p>II Languages (Telugu / Hindi)</p>
+          <p>Computer Education – Classes I to VIII</p>
+          <p>III Language – (Telugu / Hindi) Classes IV to VII</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="head">
+          <h5>
+            Elective Subjects
+          </h5>
+        </div>
+        <div class="description mt-5">
+          <p>Computer Applications / Commercial Applications / Fashion Designing(Classes VIII to X)</p>
+          <p>SUPW is a compulsory subject.</p>
+          <a href="contact.html"><button class="btn btn-lg btn-warning text-white p-4 fw-bold">CONTACT NOW <i class="fa fa-rocket"></i></button></a>
+        </div>
+      </div>
+    </div></div>
+    </div>
+
+    <div class="our-tech-main" >
+      <h3 class="text-danger">Our Teachers</h3>
+      <div class="our-tecahers">
+        <div class="left-sec"><p>The school is equipped with well trained staff members.
+           The matters concerning the Academics is delegated through the Heads of the Departments, Senior Teachers & Assistant Teachers.</p></div>
+    
+        <div class="right-sec"><p>For every 2 classes one Floor – Incharge is deputed to look into the administrative and day to day matters relating to their classes.
+           The staff comprises a group of teachers over 30 years of experience who oversee and guide the affairs of academics.</p></div>
+      </div>
+    </div>
+  <div class="teaching-staff-img" >
+  <div class="teach-img1">
+    <div class="imagebox"><img src="images/logo.png" alt="">
+      <h4>Enter Name</h4>
+      <h5>designation</h5>
+      <h6>belongs to which school</h6>
+    </div>
+  
+    <div class="imagebox"><img src="images/logo.png" alt="">
+      <h4>Enter Name</h4>
+      <h5>designation</h5>
+      <h6>belongs to which school</h6>
+    </div>
+  </div>
+  
+  <div class="teach-img2">
+    <div class="imagebox"><img src="images/logo.png" alt="">
+      <h4>Enter Name</h4>
+      <h5>designation</h5>
+      <h6>belongs to which school</h6>
+    </div>
+    <div class="imagebox"><img src="images/logo.png" alt="">
+      <h4>Enter Name</h4>
+      <h5>designation</h5>
+      <h6>belongs to which school</h6>
+    </div>
+  </div>
+  </div>
+  </div></div>
+  <div class="motto" >
+    <b> <h2 class="text-danger fw-bold">OUR MOTTO: WORK IS WORSHIP</h2></b>
+   <b>  <p> <i>THIS ADAGE ALERTS THE STUDENTS TO UTILIZE THEIR POTENTIALITIES TO THE FULLEST
+        AND TO DEVELOP A SENSE OF WORTHINESS AND </p> <p>RESPECT TOWARDS WHATEVER THEY DO.</p></i></b>
+   </div>
+   
+   <div class="logo">
+    <b> <h2 class="text-danger fw-bold">OUR LOGO</h2></b>
+   <b> <i> <p>OUR LOGO SIGNIFIES OUR PATRON SAINT JOSEPH, GUIDING US TO EMULATE THE QUALITIES OF HARD WORK, </p>
+     <p>  DEDICATION AND COMMITMENT RESULTING IN CONTINUOUS ENDEAVOR OF PURSUING EXCELLENCE. </p></i></b>
+   </div>
+   
+   
+   
+   <div class="school-song" style="text-align: center;" >
+     <h2 class="text-danger fw-bold">SCHOOL SONG</h2>
+     <pre><p>  
+       With grace and strength and love
+   And blessings from above
+   United we stand in victory.
+   We’ll be loyal everyday in work and play
+   By taking each step to God in prayer.
+   </p> </pre>
+   
+   <h2 class="text-danger fw-bold">CHORUS</h2>
+   <pre><p>
+     St. Joseph’s school your name we’ll extol
+   Emulating your thoughts and deeds.
+   Beloved our school your morals we’ll keep high,
+   Growing in pursuit of excellence.
+   
+   
+       Whenever we do fail in right spirits we sail
+   Cherishing the virtues of our school.
+   We will march hand in hand
+   Extolling our dear land
+   By striving to be a gift of love.
+     </p>
+   </pre>
+   </div>
+   
+   
+   <div class="our-story">
+     <div class="left" >
+       <h2 class="text-danger  fw-bold">OUR STORY</h2>
+       <p>The success story of St. Joseph’s Public School is filled with commitment,
+          dedication and relentless striving for perfection in providing holistic education.
+           In a time, where the meaning of true education is driven by the demands and pressures of the multitude, St. Joseph’s Public School,
+          King Koti stood the test of time and carved a niche for itself.</p>
+     </div>
+     <div class="right">
+       <img src="https://stjosephspublicschoolkingkoti.com/wp-content/uploads/2020/09/OUR-STORY-150x150.jpg" alt="">
+     </div>
+   </div>
+   
+   
+   
+   
+   <div class="genesis">
+     <div class="right">
+       <img src="https://stjosephspublicschoolkingkoti.com/wp-content/uploads/2020/09/GENESIS-2.jpg" alt="" class="mt-4">
+     </div>
+   
+   
+   <div class="genesis-left " >
+     <h2 class="text-danger  fw-bold">Genesis</h2>
+     <p>St. Joseph’s Education Society, the brainchild of Sri Udumula Gregory Reddy (U.G. Reddy) established
+        St. Anthony’s High School at Himayathnagar with a State Board curriculum in 1970. 
+        Within no time the task of providing quality education which began humbly has grown massively encompassing 
+        under its shade thousands of students and hundreds of teachers. Every year the trust of the parents was reinforced
+         with the school setting new levels of standards in the field of education.
+          The demand from parents for this kind of quality education has led to the emergence of 
+        St. Joseph’s Public School, affiliated to the Council for Indian School Certificate Examination, New Delhi at King Koti in 1980.</p>
+   </div>
+   </div>
+   
+   
+   <div class="school-history">
+     <div class="left"   >
+       <h2 class="text-danger  fw-bold">School History</h2>
+       <p>The humble beginning which started three decades ago meandered its way, 
+         adding to its course children from all walks of life enlightening and empowering them, reached the zenith of success.
+          The force behind this success is Sri U.G. Reddy, the Secretary and Principal of the school. It was his foresight, meticulous planning,
+          able administration with the dedicated staff members that spearheaded this institution to such glory.</p>
+          <br>
+          <p>Today, there are more than 5000 students who walk into this marvelous institution receive education which entwines traditional values and modern concepts.
+            The school affiliated to CISCE continuously upgrades itself catering to the needs of the times and prepares the students in all spheres.
+             The institution has its sister campuses in Asmangadh and Habsiguda to cater to the ever-growing needs of the students
+              who want to avail themselves of the advantage of ICSE education.
+            These institutions are also making a mark for themselves.</p><br>
+            <p>The students are encouraged to excel not only in academics but also in sports, literary, cultural and other activities. 
+             Lethargy and boredom vanish as soon as the child steps into this magnificent campus each day with a new dream and steps out with loads 
+             of confidence to face the challenging world.</p>
+     </div>
+     <div class="right">
+       <img src="https://stjosephspublicschoolkingkoti.com/wp-content/uploads/2020/09/SCHOOL-HISTORY-1536x760.png" alt="">
+     </div>
+   </div>
+  <a href="#" class="btn btn-danger scrollToTop">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <div class="container-fluid px-0 mt-5">
+    <div class="copy-right">
+      Copyright © 2023
+    </div>
+  </div>
+  <script src="scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

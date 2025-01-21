@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.admission .section{
+    padding: 15vh 13vw;
+}
+
+.admission .section .head h1{
+    color: 083d65;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.admission .section .head h3{
+    font-size: 30px;
+    color: #083d65;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.admission .section .head h4{
+    font-size: 25px;
+    color: #083d65;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.admission .section .head h5{
+    font-size: 20px;
+    color: #083d65;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.admission .section .description p, .admission .section .description ul li{
+    color: #083d65;
+    font-size: 18px;
+    font-weight: inherit;
+    vertical-align: baseline;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .admission .section .head h1{
+        font-size: 40px !important;
+    }
+}
+.scrollToTop{
+    position: sticky;
+    left: 95%;
+    bottom: 5%;
+}
+.copy-right{
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }

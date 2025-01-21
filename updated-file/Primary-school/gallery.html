@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="gallery.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #083d65;
+      text-align: center;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      /* background-color: #ddd; */
+      color: #ed212b;
+    }
+
+    .topnav a.active {
+    
+      color: #f9004d;
+    }
+    
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .nav-iteams {
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    #home {
+      margin-left: 100px;
+
+    }
+
+    .img-head {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .img-head {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <div class="continer">
+      <a href="#"><img class="img-head" style="width: 100px; width: 100px;" src="images/logo.png" alt=""></a>
+
+      <a class="nav-iteams" id="home" href="index.html" style="--i:0">Home</a>
+      <a class="nav-iteams" href="about.html" style="--i:1">About US</a>
+      <a class="nav-iteams" href="founder.html" style="--i:2">Founder</a>
+      <a class="nav-iteams" href="acadamics.html" style="--i:3">Academics</a>
+      <a class="nav-iteams" href="alumniform.html" style="--i:4">Alumni Form</a>
+      <a class="nav-iteams" href="admission.html" style="--i:5">Admission Process</a>
+      <a class="nav-iteams" href="alumicorner.html" style="--i:6">Alumni Corner</a>
+      <a class="nav-iteams active" href="#" style="--i:7">Gallery</a>
+      <a class="nav-iteams" href="contact.html" style="--i:8">Contact Us</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i style="font-size: 30px; margin-top: 25px; margin-right: 20px;" class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  <div class="container-fluid gallery">
+    <div class="row section">
+      <div class="col-md-4">
+        <div class="card" onclick="viewImages('Sports day - 2018-19')" data-aos="flip-left">
+          <i class="fa fa-search" style="font-size:24px"></i>
+          <h6 class="mt-5">Sports day - 2018-19</h6>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" onclick="viewImages('Memories')"data-aos="flip-right">
+          <i class="fa fa-search" style="font-size:24px"></i>
+          <h6 class="mt-5">Memories</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" onclick="viewImages('Annual day - 2019-20')"data-aos="flip-left">
+          <i class="fa fa-search" style="font-size:24px"></i>
+          <h6 class="mt-5">Annual day - 2019-20</h6>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- <a href="#" class="btn btn-danger scrollToTop">
+    <i class="fa fa-angle-up"></i>
+  </a> -->
+   <div class="container-fluid px-0 mt-5" style="position:absolute;bottom: 0px;">
+    <div class="copy-right">
+      Copyright © 2023
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    const viewImages = (title) => {
+      localStorage.setItem("title", title)
+      window.location.href = "images.html";
+
+    }
+  </script>
+  <script src="scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

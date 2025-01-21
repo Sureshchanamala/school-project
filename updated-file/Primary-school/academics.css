@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.academics .section {
+    padding: 15vh 13vw;
+}
+.text-secondary{
+    color: #4bc2f9 !important;
+}
+
+.academics .section .head h4 {
+    font-size: 30px;
+    color: #083d65;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.academics .section .head h5 {
+    font-size: 22px;
+    color: #083d65;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.academics .section .description p {
+    color: #083d65;
+    font-size: 16px;
+    font-weight: inherit;
+    vertical-align: baseline;
+}
+
+.bg-gray {
+    background-color: #f7f7f7 !important;
+}
+
+.academics .section .card {
+    min-height: 300px;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.sline {
+    width: 18px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #083d65;
+}
+
+.text-warning {
+    color: #EDA855 !important;
+}
+
+.btn-warning {
+    background-color: #EDA855 !important;
+    font-size: 15px;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.academics .section .head h3 {
+    font-size: 25px;
+    color: #083d65;
+    font-weight: 700;
+}
+
+.fa-check-circle {
+    color: #46b1e2;
+    font-size: 18px !important;
+    margin-right: 12px;
+}
+
+.copy-right {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.scrollToTop {
+    position: sticky;
+    left: 95%;
+    bottom: 5%;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #083d65;
+      text-align: center;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      /* background-color: #ddd; */
+      color: #ed212b;
+    }
+
+    .topnav a.active {
+      color: #ed212b;
+
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .nav-items {
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    #home {
+      margin-left: 100px;
+
+    }
+
+    .img-head {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .img-head {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <div class="continer">
+  <a href="#"><img  class="img-head" src="images/logo.png" alt=""></a>
+
+  <a class="nav-items"  id="home" href="index.html" style="--i:0">Home</a>
+  <a class="nav-items" href="about.html" style="--i:1">About US</a>
+  <a class="nav-items" href="founder.html" style="--i:2">Founder</a>
+  <a class="nav-items" href="acadamics.html" style="--i:3">Academics</a>
+  <a class="nav-items active" href="#" style="--i:4">Alumni Form</a>
+  <a class="nav-items" href="admission.html" style="--i:5">Admission Process</a>
+  <a class="nav-items" href="alumnicorner.html" style="--i:6">Alumni Corner</a>
+  <a class="nav-items" href="gallery.html" style="--i:7">Gallery</a>
+  <a class="nav-items" href="contact.html" style="--i:8">Contact Us</a>
+</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i style="font-size: 30px; margin-top: 25px; margin-right: 20px;"  class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  } 
+} 
+</script>
+
+<style>
+  .pagination {
+      margin-top: 100px;
+      padding-left: 50%;
+  }
+
+  .pagination a {
+      display: inline-block;
+      margin-right: 5px;
+      padding: 5px 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+
+  .pagination a {
+      font-size: 30px;
+      color: #ff9900;
+  }
+
+  .pagination-wrapper {
+      display: flex;
+      justify-content: center;
+  }
+  #blogContent{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-around; 
+    margin-top: 80px;
+
+  }
+  .icon_info{
+    border: 2px solid black;
+
+  }
+  .icon_info h5 , .icon_info p{
+    margin-left: 20px;
+  }
+  .icon_info img{
+    width: 300px;
+    height: 300px;
+  }
+  .read-agileits button{
+    padding: 10px;
+    background-color: #ff9900;
+    color: rgb(248, 246, 246);
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  .heading-agileinfo{
+    margin-left: 200px;
+    padding-left: 50px;
+  }
+
+  @media screen and (max-width: 780px) {
+    #blogContent{
+      flex-direction: column;
+      width: 80%;
+      margin-left: 50px;
+      margin-right: 30px;
+      margin-top: 50px;
+    }
+
+  }
+</style>
+
+<div class="banner-bottom">
+  <div class="container">
+      <div class="tittle_head_w3layouts">
+          <h1 class="heading-agileinfo">Alumni Form</h1>
+      </div>
+      <div class="col-md-12">
+          <div class="inner_sec_info_agileits_w3" id="blogContent">
+          </div>
+          <div class="pagination" id="pagination">
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  const api = "http://localhost:8000";
+  const apiUrl = `${api}/students`;
+  const blogContent = document.getElementById("blogContent");
+  const pagination = document.getElementById("pagination");
+
+  const fetchData = async (page, limit) => {
+      const response = await fetch(`${apiUrl}?page=${page}&limit=${limit}`);
+      const data = await response.json();
+      return data;
+  };
+
+  const createStudentCards = (data) => {
+      blogContent.innerHTML = '';
+
+      data.results.forEach(student => {
+          const studentCard = document.createElement("div");
+          studentCard.classList.add("col-md-4", "grid_info");
+
+          studentCard.innerHTML = `
+              <div  class="icon_info">
+                  <img src="${api}/${student.image}" alt="Image not found" class="img-responsive">
+                  <h5><u><b>Name: ${student.fname} ${student.lname}</b></u></h5>
+                  <p>Email: ${student.email}</p>
+                  <p>Mobile: ${student.mobile}</p>
+                  <p>Date of Birth: ${student.dob}</p>
+                  <p>Year: ${student.year}</p>
+                  <p>Permanent Address: ${student.perm_address}</p>
+                  <p>Present Address: ${student.present_address}</p>
+                  <p>Place: ${student.place}</p>
+                  <br>
+                  <a href="#" class="read-agileits"><button>Read More </button></a>
+              </div>
+          `;
+
+          blogContent.appendChild(studentCard);
+      });
+  };
+
+  const createPagination = (data) => {
+      pagination.innerHTML = '';
+
+      const currentPage = data.next ? data.next.page - 1 : 1;
+      const totalPages = Math.ceil(data.total / (data.next ? data.next.limit : 3));
+
+      for (let i = 1; i <= totalPages; i++) {
+          const pageLink = document.createElement("a");
+          pageLink.textContent = i;
+          pageLink.addEventListener("click", () => loadPage(i, data.next ? data.next.limit : 3));
+
+          if (i === currentPage) {
+              pageLink.classList.add("active");
+          }
+
+          pagination.appendChild(pageLink);
+      }
+  };
+
+  const loadPage = async (page, limit) => {
+      const data = await fetchData(page, limit);
+      createStudentCards(data);
+      createPagination(data);
+  };
+
+  loadPage(1, 3);
+</script>
+<script src="scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

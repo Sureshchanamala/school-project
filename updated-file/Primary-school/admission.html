@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="admission.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #083d65;
+      text-align: center;
+      padding: 14px 14px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      /* background-color: #ddd; */
+      color: #ed212b;
+    }
+
+    .topnav a.active {
+      color: #ed212b;
+
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .nav-items {
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    #home {
+      margin-left: 100px;
+
+    }
+
+    .img-head {
+      width: 100px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+
+      .img-head {
+        width: 100px;
+        height: 100px;
+        margin-left: 15px;
+      }
+    }
+
+    @media screen and (max-width: 780px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <div class="continer">
+      <a href="#"><img class="img-head" src="images/logo.png" alt=""></a>
+
+      <a class="nav-items" id="home" href="index.html" style="--i:0">Home</a>
+      <a class="nav-items" href="about.html" style="--i:1">About US</a>
+      <a class="nav-items" href="founder.html" style="--i:2">Founder</a>
+      <a class="nav-items" href="acadamics.html" style="--i:3">Academics</a>
+      <a class="nav-items" href="amenities.html" style="--i:4">Amenities & Activities</a>
+      <a class="nav-items active" href="#" style="--i:5">Admission Process</a>
+      <a class="nav-items" href="alumnicorner.html" style="--i:6">Alumni Corner</a>
+      <a class="nav-items" href="gallery.html" style="--i:7">Gallery</a>
+      <a class="nav-items" href="contact.html" style="--i:8">Contact Us</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i style="font-size: 30px; margin-top: 25px; margin-right: 20px;" class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- <div style="padding-left:16px">
+  <h2>Responsive Topnav Example</h2>
+  <p>Resize the browser window to see how it works.</p>
+</div> -->
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+  <div class="container-fluid admission">
+
+    <div class="row section"  >
+      <div class="col-md-6">
+        <div class="d-flex flex-column align-items center">
+          <div class="head">
+            <h1>
+              ADMISSION PROCESS
+            </h1>
+          </div>
+          <div class="description mt-5">
+            <p>
+              The core aim of education at St. Joseph’s Public School is to foster all round development of a child with
+              emphasis on moral, social, emotional, physical & intellectual development of each child.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="head">
+          <h4>
+            Take A Step Towards Excellence
+          </h4>
+        </div>
+        <div class="image mt-4">
+          <img
+            src="https://stjosephspublicschoolkingkoti.com/wp-content/uploads/2020/09/Admission-Process-269x300.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="row section pt-0" >
+      <div class="col-md-12">
+        <div class="head">
+          <h3 class="text-underline">
+            PRE-PRIMARY CLASSES
+          </h3>
+        </div>
+        <div class="description mt-5">
+          <p>
+            The first level of admission into school is Pre Primary classes. Admission notification will be put up on
+            the Notice Board of school during November of every year.
+          </p>
+        </div>
+
+        <div class="head mt-5">
+          <h5>
+            Registration
+          </h5>
+        </div>
+        <div class="description mt-5">
+          <p>
+            Prospectus & Registration Forms will be made available in the school office. The duly filled in Registration
+            Form along with necessary documents must be submitted within 3 working days from the date of issue.
+            Registration itself does not guarantee admission. Incomplete Registration Forms will not be considered.
+          </p>
+        </div>
+
+        <div class="head mt-5">
+          <h5>
+            Age Criteria
+          </h5>
+        </div>
+        <div class="description mt-5">
+          <p>
+            A candidate seeking admission into PP-I should be between 3.5 and 4.5 years of age in the year of taking
+            admission.
+          </p>
+        </div>
+
+        <div class="description mt-4">
+          <p>
+            For admission in PP-II should be between 4.5 and 5.5 years of age in the year of taking admission.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row pt-0 section"  >
+      <div class="col-md-12">
+        <div class="head">
+          <h3 class="text-underline">
+            ISC – Class XI
+          </h3>
+        </div>
+        <div class="description mt-5">
+          <p>
+            Class XI admission process begins in the month of May by issue of admission forms.
+          </p>
+        </div>
+
+        <div class="head mt-5">
+          <h5>
+            ELIGIBILITY
+          </h5>
+        </div>
+        <div class="description mt-5">
+          <p>
+            The candidates (Boys / girls) who have been awarded the PASS Certificate in ICSE examination.
+          </p>
+        </div>
+
+        <div class="description mt-4">
+          <p>
+            The candidates who have been awarded a PASS Certificate in an equivalent examination conducted by other
+            Examination boards i.e. SSC or CBSE will be decided by the Secretary of Council.
+          </p>
+        </div>
+
+        <div class="description mt-4">
+          <p>
+            A candidate who has been thus awarded a pass certificate by another examining board (SSC or CBSE) may be
+            admitted provisionally to Class XI of the ISC ( 11 & 12 year) course and should submit true copies of the
+            statement of marks issued to the candidate by the examining board which will be forwarded by the school to
+            the council. If the candidate is found eligible the Council will issue an ‘Eligibility Certificate’.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row pt-0 section"  >
+      <div class="col-md-12">
+        <div class="head">
+          <h3 class="text-underline">
+            OTHER CLASSES
+          </h3>
+        </div>
+        <div class="description mt-5">
+          <ul>
+            <li class="mt-3">
+              Admissions into other classes than those mentioned primarily depends on vacancies available. Registration
+              Forms for the same will be made available in March or April.
+            </li>
+            <li class="mt-3">
+              Admission to Class X & XII is possible only if the previous school of study is ICSE / ISC affiliated and
+              also the elective taken by the candidate must be the same electives offered in the school.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- <div class="row py-0 section">
+      <div class="col-md-6">
+        <p>Copyright © 2023 St. Joseph’s Public School, King Koti, Hyderabad.</p>
+      </div>
+
+      <div class="col-md-6">
+        <p align="right" >Designed by Epixelweb</p>
+      </div>
+
+    </div> -->
+
+
+  </div>
+  <a href="#" class="btn btn-danger scrollToTop" id="myBtn">
+    <i class="fa fa-angle-up"></i>
+  </a>
+  <div class="container-fluid px-0 mt-5">
+    <div class="copy-right">
+      Copyright © 2023
+    </div>
+  </div>
+  <script src="scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

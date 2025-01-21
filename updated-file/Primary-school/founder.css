@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #083d65;
+}
+
+.bg-gray {
+    background-color: #f7f7f7 !important;
+}
+
+.founder {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-around;
+
+}
+
+.founder .left-sec,
+.founder .right-sec {
+    width: 45%;
+}
+
+.founder .left-sec h2 {
+    font-size: 50px;
+}
+
+.founder .text-danger {
+    color: #083d65 !important;
+}
+
+.founder .left-sec p {
+    font-size: 18px;
+    word-spacing: 5px;
+}
+
+.founder .right-sec img {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.about-founder-sec {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 18px;
+    /* word-spacing: 10px; */
+    margin-top: 40px;
+}
+
+.principles-msg {
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 18px;
+    /* word-spacing: 10px; */
+    margin-top: 40px;
+    border: 3px solid rgb(94, 229, 234);
+    padding: 10px;
+}
+
+.principles-msg p {
+    margin-top: 50px;
+}
+
+.bst-wishes {
+    padding-top: 15px;
+}
+
+.governing-council {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.governing-council h2 {
+    font-size: 50px;
+}
+
+.governing-council p {
+    font-size: 18px;
+    /* word-spacing: 10px; */
+}
+
+.copy-right {
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.scrollToTop {
+    position: sticky;
+    left: 95%;
+    bottom: 5%;
+}
+@media screen and (max-width: 780px) {
+  
+
+    .founder{
+     flex-direction: column;
+     margin-left: 30px;
+     margin-right: 30px;
+    }
+    .founder .left-sec,.founder .right-sec{
+     width: 100%;
+    }
+    .about-founder-sec{
+     margin-left: 30px;
+     margin-right: 30px;
+    }
+    .principles-msg{
+     margin-left: 30px;
+     margin-right: 30px;
+    }
+    .governing-council{
+     margin-left: 30px;
+     margin-right: 30px;
+    }
+   
+   }
